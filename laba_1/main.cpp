@@ -1,6 +1,15 @@
 #include <iostream>
+#include "Pipeline.h"
+#include "BinaryCalculator.h"
 
 int main() {
-    std::cout << "Hello, World!" << std::endl;
+    using namespace std;
+
+    int firstVector = 1, secondVector = 2, processingTime = 1;
+
+    //ToDo Сделать ввод значений
+
+    Pipeline pipeline1(firstVector, secondVector, processingTime);
+
     return 0;
 }
