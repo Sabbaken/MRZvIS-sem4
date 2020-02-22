@@ -10,6 +10,5 @@ int main() {
     //ToDo Сделать ввод значений
 
     Pipeline pipeline1(firstVector, secondVector, processingTime);
-
     return 0;
 }
