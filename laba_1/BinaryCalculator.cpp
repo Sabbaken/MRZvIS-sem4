@@ -28,6 +28,9 @@ std::vector<int> BinaryCalculator::_10_to_2_(int x) {
         x = (x - mod) / 2;
         result.push_back(mod);
     }
+
+    for (int i = 0; i < result.size() - 4; ++i)
+        result.push_back(0);
     return result;
 }
 
@@ -35,6 +38,16 @@ std::vector<int> BinaryCalculator::_2_to_additional_code(std::vector<int> binary
 
 }
 
-std::vector<int> BinaryCalculator::binaryAddition(std::vector<int> X1, std::vector<int> X2) {
+std::vector<int> BinaryCalculator::binaryAddition(std::vector<int> num_1, std::vector<int> num_2) {
+    std::vector<int> sum(5,0);
+    int carry;
+    for (int i = 0; i < 4; i++) {
+        sum[i] = ((num_1[i] ^ num_2[i]) ^ carry); // c is carry
+        carry = ((num_1[i] & num_2[i]) | (num_1[i] & carry)) | (num_2[i] & carry);
+    }
 
+    if (carry == 1)
+        sum.push_back(1);
+
+    return sum;
 }

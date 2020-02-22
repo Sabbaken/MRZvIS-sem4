@@ -45,6 +45,6 @@ public:
     std::vector<int> _10_to_2_(int number);
 
     // Сумма двоичных чисел
-    std::vector<int> binaryAddition(std::vector<int> a, std::vector<int> b);
+    std::vector<int> binaryAddition(std::vector<int> num_1, std::vector<int> num_2);
 
 };
