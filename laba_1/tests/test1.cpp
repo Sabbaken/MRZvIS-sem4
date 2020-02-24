@@ -29,20 +29,31 @@ TEST(BinaryComputerTests, bin_to_additional_code_conversion_test) {
     EXPECT_EQ(_4_bin_additional_code, calc._2_to_additional_code(_4_bin));
 }
 
-
-TEST(BinaryComputerTests, bin_addition_test) {
+TEST(BinaryComputerTests, bin_inversion_test) {
     BinaryCalculator calc = BinaryCalculator();
 
     std::vector<int> _1_bin = {1, 0, 0, 0};
-    std::vector<int> _2_bin = {0, 1, 0, 0};
-    std::vector<int> _3_bin = {1, 1, 0, 0};
-    std::vector<int> _4_bin = {0, 0, 1, 0};
-    std::vector<int> _5_bin = {1, 0, 1, 0};
-    std::vector<int> _6_bin = {0, 1, 1, 0};
+    std::vector<int> _minus_1_bin = {1, 0, 0, 1};
+    std::vector<int> _minus_3_bin = {0, 1, 0, 1};
 
-    EXPECT_EQ(_6_bin, calc.binaryAddition(_3_bin, _3_bin));
-    EXPECT_EQ(_6_bin, calc.binaryAddition(_4_bin, _2_bin));
-    EXPECT_EQ(_5_bin, calc.binaryAddition(_4_bin, _1_bin));
-    EXPECT_EQ(_4_bin, calc.binaryAddition(_2_bin, _2_bin));
+    std::vector<int> _1_bin_inverted = {0, 1, 1, 0};
+    std::vector<int> _minus_1_bin_inverted = {0, 1, 1, 1};
+    std::vector<int> _minus_3_bin_inverted = {1, 0, 1, 1};
+
+    EXPECT_EQ(_1_bin_inverted, calc._2_to_inverted_code(_1_bin));
+    EXPECT_EQ(_minus_1_bin_inverted, calc._2_to_inverted_code(_minus_1_bin));
+    EXPECT_EQ(_minus_3_bin_inverted, calc._2_to_inverted_code(_minus_3_bin));
+}
+
+TEST(BinaryComputerTests, bin_additional_test) {
+    BinaryCalculator calc = BinaryCalculator();
+
+    std::vector<int> _2_additional = {0, 1, 0, 0};
+    std::vector<int> _2_binary = {0, 1, 0, 0};
+    std::vector<int> _minus_2_binary = {0, 1, 0, 1};
+    std::vector<int> _minus_2_additional = {0, 1, 0, 1};
+
+    EXPECT_EQ(_2_additional, calc._2_to_additional_code(_2_binary));
+    EXPECT_EQ(_minus_2_additional, calc._2_to_additional_code(_minus_2_binary));
 }
 
