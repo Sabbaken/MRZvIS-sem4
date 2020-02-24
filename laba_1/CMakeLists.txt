@@ -1,36 +1,19 @@
 cmake_minimum_required(VERSION 3.15)
+project(Laba1)
 
-set(This laba_1)
-project(${This})
+set(CMAKE_CXX_STANDARD 17)
+add_subdirectory(lib/googletest)
+include_directories(lib/googletest/googletest/include)
+include_directories(lib/googletest/googlemock/include)
 
-#ToDo настроить управление этим параметром из Clion
-#ПАЖАЛУСТА сделайте это за меня
-set(RUN_TESTS false)
-
-set(CMAKE_CXX_STANDARD 20)
-set(CMAKE_POSITION_INDEPENDENT_CODE ON)
-
-set(Headers
-        Pipeline.h
-        BinaryCalculator.h
-        Visualizer.h
-        )
-
-set(Sources
-        main.cpp
-        Pipeline.cpp
+set(SOURCE_FILES main.cpp
+        Tests/test.cpp
         BinaryCalculator.cpp
+        BinaryCalculator.h
+        Pipeline.cpp
+        Pipeline.h
         Visualizer.cpp
-        )
+        Visualizer.h)
 
-if(${RUN_TESTS})
-    add_executable(${Sources} ${Headers})
-    enable_testing()
-    add_subdirectory(lib/googletest)
-    add_library(${This} STATIC ${Sources} ${Headers})
-    add_subdirectory(tests)
-endif ()
-
-if (NOT ${RUN_TESTS})
-    add_executable(${This} ${Sources} ${Headers})
-endif ()
+add_executable(Laba1 ${SOURCE_FILES})
+target_link_libraries(Laba1 gtest gtest_main)

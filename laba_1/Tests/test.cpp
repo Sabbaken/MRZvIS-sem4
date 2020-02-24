@@ -1,6 +1,9 @@
 #include <gtest/gtest.h>
+#include <gmock/gmock.h>
 #include "../BinaryCalculator.h"
 #include "vector"
+
+using testing::Eq;
 
 TEST(BinaryCalculatorTests, dec_number_to_bin_conversion_test) {
     BinaryCalculator calc = BinaryCalculator();
@@ -43,6 +46,5 @@ TEST(BinaryComputerTests, bin_addition_test) {
     EXPECT_EQ(_6_bin, calc.binaryAddition(_3_bin, _3_bin));
     EXPECT_EQ(_6_bin, calc.binaryAddition(_4_bin, _2_bin));
     EXPECT_EQ(_5_bin, calc.binaryAddition(_4_bin, _1_bin));
-    EXPECT_EQ(_4_bin, calc.binaryAddition(_2_bin, _2_bin));
+    ASSERT_EQ(_4_bin, calc.binaryAddition(_2_bin, _2_bin));
 }
-
