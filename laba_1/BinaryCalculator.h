@@ -7,7 +7,7 @@ private:
     int inputFirstNumber, inputSecondNumber, pairNumber;;
 
     // Константы для двоичных чисел
-    int SIZE = 4;
+    int SIZE = 3;
     std::vector<int> ONE = {1, 0, 0, 0};
                     // 0001
 public:
