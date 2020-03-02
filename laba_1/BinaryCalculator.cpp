@@ -41,13 +41,11 @@ std::vector<int> BinaryCalculator::binaryAddition(std::vector<int> num_1, std::v
         sum[i] = ((num_1[i] ^ num_2[i]) ^ carry); // c is carry
         carry = ((num_1[i] & num_2[i]) | (num_1[i] & carry)) | (num_2[i] & carry);
     }
-    return sum;
-}
 
-std::vector<int> BinaryCalculator::_2_to_additional_code(std::vector<int> binaryNumber) {
-    if (binaryNumber[3] == 0)
-        return binaryNumber;
-    return binaryAddition(_2_to_inverted_code(binaryNumber), ONE);
+    if (carry == 1)
+        sum.push_back(1);
+
+    return sum;
 }
 
 std::vector<int> BinaryCalculator::_2_to_inverted_code(std::vector<int> binaryNumber) {
