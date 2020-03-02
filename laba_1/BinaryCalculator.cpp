@@ -35,18 +35,30 @@ std::vector<int> BinaryCalculator::_10_to_2_(int x) {
 }
 
 std::vector<int> BinaryCalculator::binaryAddition(std::vector<int> num_1, std::vector<int> num_2) {
+    std::vector<int> sum(SIZE, 0);
+    int carry = 0;
+    for (int i = 0; i < SIZE; i++) {
+        sum[i] = ((num_1[i] ^ num_2[i]) ^ carry); // c is carry
+        carry = ((num_1[i] & num_2[i]) | (num_1[i] & carry)) | (num_2[i] & carry);
+    }
+    return sum;
+}
 
+std::vector<int> BinaryCalculator::_2_to_additional_code(std::vector<int> binaryNumber) {
+    if (binaryNumber[3] == 0)
+        return binaryNumber;
+    return binaryAddition(_2_to_inverted_code(binaryNumber), ONE);
 }
 
 std::vector<int> BinaryCalculator::_2_to_inverted_code(std::vector<int> binaryNumber) {
-    for (int i = 0; i < 3; ++i) {
+    for (int i = 0; i < binaryNumber.size() - 1; ++i) {
         binaryNumber[i] = !binaryNumber[i];
     }
     return binaryNumber;
 }
 
 std::vector<int> BinaryCalculator::_2_to_additional_code(std::vector<int> binaryNumber) {
-    if (binaryNumber[3] == 0)
+    if(binaryNumber[SIZE] == 0)
         return binaryNumber;
     return binaryAddition(_2_to_inverted_code(binaryNumber), ONE);
 }

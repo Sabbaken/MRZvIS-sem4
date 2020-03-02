@@ -1,6 +1,9 @@
 #include <gtest/gtest.h>
+#include <gmock/gmock.h>
 #include "../BinaryCalculator.h"
 #include "vector"
+
+using testing::Eq;
 
 TEST(BinaryCalculatorTests, dec_number_to_bin_conversion_test) {
     BinaryCalculator calc = BinaryCalculator();
@@ -57,10 +60,8 @@ TEST(BinaryCalculatorTests, bin_to_additional_code_conversion_test) {
     std::vector<int> _1_bin_additional_code = {1, 0, 0, 0};
     std::vector<int> _4_bin_additional_code = {0, 0, 1, 0};
 
-    std::vector<int> _minus_2_binary = {0, 1, 0, 1};
-    std::vector<int> _minus_2_additional = {0, 1, 0, 1};
-
-    EXPECT_EQ(_1_bin_additional_code, calc._2_to_additional_code(_1_bin));
-    EXPECT_EQ(_4_bin_additional_code, calc._2_to_additional_code(_4_bin));
-    EXPECT_EQ(_minus_2_additional, calc._2_to_additional_code(_minus_2_binary));
+    EXPECT_EQ(_6_bin, calc.binaryAddition(_3_bin, _3_bin));
+    EXPECT_EQ(_6_bin, calc.binaryAddition(_4_bin, _2_bin));
+    EXPECT_EQ(_5_bin, calc.binaryAddition(_4_bin, _1_bin));
+    ASSERT_EQ(_4_bin, calc.binaryAddition(_2_bin, _2_bin));
 }
