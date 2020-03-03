@@ -7,9 +7,9 @@ private:
     int inputFirstNumber, inputSecondNumber, pairNumber;;
 
     // Константы для двоичных чисел
-    int SIZE = 3;
+    int SIZE = 4;
     std::vector<int> ONE = {1, 0, 0, 0};
-                    // 0001
+    // 0001
 public:
     // Конструктор
     BinaryCalculator(int inputFirstNumber, int inputSecondNumber, int pairNumber);
