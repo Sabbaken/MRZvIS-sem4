@@ -19,19 +19,14 @@ public:
     // Реализация алгоритма деления
     void compute();
 
-    // Вот этим должен заниматься visualizer
-    // Заполняет таблицу начальными значениями
-    void showBinaryNums();
-
-    // Вот этим должен заниматься visualizer
-    // Заполняет таблицу результатом вычисления
-    void showResult();
-
     // Сдвиг
     void shift();
 
     // Обновление частного
     void fixResult();
+
+    //Сумма
+    void getSumm();
 
     // Восстановление остатка
     void restoreRemainder();

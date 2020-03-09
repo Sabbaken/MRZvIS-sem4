@@ -1,4 +1,4 @@
-# Install script for directory: /home/kirill/Documents/ВУЗ/MRZvIS/laba_1/lib/googletest
+# Install script for directory: /home/viktor/2-course/MRZvIS/laba_1/lib/googletest
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -39,7 +39,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/kirill/Documents/ВУЗ/MRZvIS/laba_1/cmake-build-debug/lib/googletest/googlemock/cmake_install.cmake")
+  include("/home/viktor/2-course/MRZvIS/laba_1/cmake-build-debug/lib/googletest/googlemock/cmake_install.cmake")
 
 endif()
 

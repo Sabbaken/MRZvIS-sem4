@@ -60,3 +60,58 @@ std::vector<int> BinaryCalculator::_2_to_additional_code(std::vector<int> binary
         return binaryNumber;
     return binaryAddition(_2_to_inverted_code(binaryNumber), ONE);
 }
+
+void BinaryCalculator::shift()
+{
+    std::vector<int> temp = std::vector<int>(this->summ.begin(),this->summ.end()-1);
+    temp.emplace(temp.begin(),0);
+    this->summ = temp;
+    temp = std::vector<int>(this->firstBinaryNumber.begin(),this->firstBinaryNumber.end()-1);
+    temp.emplace(temp.begin(),0);
+    this->firstBinaryNumber = temp;
+}
+
+void BinaryCalculator::getSumm()
+{
+    if(this->summ[SIZE - 1] == 0){
+        this->summ = binaryAddition(this->summ,this->secondBinaryNumberAddCode);
+    } else {
+        this->summ = binaryAddition(this->summ,this->secondBinaryNumber);
+    }
+}
+
+void BinaryCalculator::fixResult()
+{
+    if(this->summ[SIZE - 1] == 0){
+        std::vector<int> temp = std::vector<int>(this->div.begin(),this->div.end()-1);
+        temp.emplace(temp.begin(),1);
+        this->div = temp;
+    } else {
+        std::vector<int> temp = std::vector<int>(this->div.begin(),this->div.end()-1);
+        temp.emplace(temp.begin(),0);
+        this->div = temp;
+    }
+}
+
+void BinaryCalculator::restoreRemainder()
+{
+    if(this->summ[SIZE - 1] == 1){
+        this->summ = binaryAddition(this->summ,this->secondBinaryNumber);
+    }
+}
+
+void BinaryCalculator::compute()
+{
+    //showFirstState
+    for(int i = 0; i < 4; i++){
+        this->shift();
+        //заполнить колонку сдвига
+        this->getSumm();
+        //заполнить колонку суммы
+        this->fixResult();
+        //заполнить колонку частного
+    }
+    this->restoreRemainder();
+    //заполнить колоку остатка
+    //showFinalState
+}

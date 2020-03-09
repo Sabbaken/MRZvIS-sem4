@@ -644,23 +644,23 @@ absl/debugging/symbolize.h
 absl/strings/str_cat.h
 ../lib/googletest/googletest/src/absl/strings/str_cat.h
 
-/home/kirill/Documents/ВУЗ/MRZvIS/laba_1/lib/googletest/googletest/src/gtest-all.cc
+/home/viktor/2-course/MRZvIS/laba_1/lib/googletest/googletest/src/gtest-all.cc
 gtest/gtest.h
-/home/kirill/Documents/ВУЗ/MRZvIS/laba_1/lib/googletest/googletest/src/gtest/gtest.h
+/home/viktor/2-course/MRZvIS/laba_1/lib/googletest/googletest/src/gtest/gtest.h
 src/gtest.cc
-/home/kirill/Documents/ВУЗ/MRZvIS/laba_1/lib/googletest/googletest/src/src/gtest.cc
+/home/viktor/2-course/MRZvIS/laba_1/lib/googletest/googletest/src/src/gtest.cc
 src/gtest-death-test.cc
-/home/kirill/Documents/ВУЗ/MRZvIS/laba_1/lib/googletest/googletest/src/src/gtest-death-test.cc
+/home/viktor/2-course/MRZvIS/laba_1/lib/googletest/googletest/src/src/gtest-death-test.cc
 src/gtest-filepath.cc
-/home/kirill/Documents/ВУЗ/MRZvIS/laba_1/lib/googletest/googletest/src/src/gtest-filepath.cc
+/home/viktor/2-course/MRZvIS/laba_1/lib/googletest/googletest/src/src/gtest-filepath.cc
 src/gtest-matchers.cc
-/home/kirill/Documents/ВУЗ/MRZvIS/laba_1/lib/googletest/googletest/src/src/gtest-matchers.cc
+/home/viktor/2-course/MRZvIS/laba_1/lib/googletest/googletest/src/src/gtest-matchers.cc
 src/gtest-port.cc
-/home/kirill/Documents/ВУЗ/MRZvIS/laba_1/lib/googletest/googletest/src/src/gtest-port.cc
+/home/viktor/2-course/MRZvIS/laba_1/lib/googletest/googletest/src/src/gtest-port.cc
 src/gtest-printers.cc
-/home/kirill/Documents/ВУЗ/MRZvIS/laba_1/lib/googletest/googletest/src/src/gtest-printers.cc
+/home/viktor/2-course/MRZvIS/laba_1/lib/googletest/googletest/src/src/gtest-printers.cc
 src/gtest-test-part.cc
-/home/kirill/Documents/ВУЗ/MRZvIS/laba_1/lib/googletest/googletest/src/src/gtest-test-part.cc
+/home/viktor/2-course/MRZvIS/laba_1/lib/googletest/googletest/src/src/gtest-test-part.cc
 src/gtest-typed-test.cc
-/home/kirill/Documents/ВУЗ/MRZvIS/laba_1/lib/googletest/googletest/src/src/gtest-typed-test.cc
+/home/viktor/2-course/MRZvIS/laba_1/lib/googletest/googletest/src/src/gtest-typed-test.cc
 

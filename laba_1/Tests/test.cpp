@@ -68,5 +68,5 @@ TEST(BinaryCalculatorTests, bin_to_additional_code_conversion_test) {
     EXPECT_EQ(_6_bin, calc.binaryAddition(_3_bin, _3_bin));
     EXPECT_EQ(_6_bin, calc.binaryAddition(_4_bin, _2_bin));
     EXPECT_EQ(_5_bin, calc.binaryAddition(_4_bin, _1_bin));
-    ASSERT_EQ(_4_bin, calc.binaryAddition(_2_bin, _2_bin));
+    EXPECT_EQ(_4_bin, calc.binaryAddition(_2_bin, _2_bin));
 }

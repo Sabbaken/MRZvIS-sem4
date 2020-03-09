@@ -1,4 +1,4 @@
-# Install script for directory: /home/kirill/Documents/ВУЗ/MRZvIS/laba_1
+# Install script for directory: /home/viktor/2-course/MRZvIS/laba_1
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -39,7 +39,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/kirill/Documents/ВУЗ/MRZvIS/laba_1/cmake-build-debug/lib/googletest/cmake_install.cmake")
+  include("/home/viktor/2-course/MRZvIS/laba_1/cmake-build-debug/lib/googletest/cmake_install.cmake")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)
@@ -50,5 +50,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/kirill/Documents/ВУЗ/MRZvIS/laba_1/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/viktor/2-course/MRZvIS/laba_1/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
