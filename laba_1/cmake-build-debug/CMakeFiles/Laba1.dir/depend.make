@@ -3,11 +3,15 @@
 
 CMakeFiles/Laba1.dir/BinaryCalculator.cpp.o: ../BinaryCalculator.cpp
 CMakeFiles/Laba1.dir/BinaryCalculator.cpp.o: ../BinaryCalculator.h
+CMakeFiles/Laba1.dir/BinaryCalculator.cpp.o: ../Visualizer.h
 
+CMakeFiles/Laba1.dir/Pipeline.cpp.o: ../BinaryCalculator.h
 CMakeFiles/Laba1.dir/Pipeline.cpp.o: ../Pipeline.cpp
 CMakeFiles/Laba1.dir/Pipeline.cpp.o: ../Pipeline.h
+CMakeFiles/Laba1.dir/Pipeline.cpp.o: ../Visualizer.h
 
 CMakeFiles/Laba1.dir/Visualizer.cpp.o: ../Visualizer.cpp
+CMakeFiles/Laba1.dir/Visualizer.cpp.o: ../Visualizer.h
 
 CMakeFiles/Laba1.dir/main.cpp.o: ../BinaryCalculator.h
 CMakeFiles/Laba1.dir/main.cpp.o: ../Pipeline.h

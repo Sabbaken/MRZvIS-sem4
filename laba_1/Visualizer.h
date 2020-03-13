@@ -1,17 +1,15 @@
-#pragma once
-#ifndef LABA1_VISUALIZER_H
-#define LABA1_VISUALIZER_H
-
+#include "vector"
+#include "string"
 
 class Visualizer {
-    // Вот этим должен заниматься visualizer
-    // Заполняет таблицу начальными значениями
-    void showBinaryNums();
+public:
+    std::vector<std::vector<std::string>> result;
 
-    // Вот этим должен заниматься visualizer
-    // Заполняет таблицу результатом вычисления
+    Visualizer(){
+
+    }
+
+    void addResultVector(std::vector<std::string>);
+
     void showResult();
 };
-
-
-#endif //LABA1_VISUALIZER_H

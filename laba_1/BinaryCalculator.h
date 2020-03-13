@@ -4,7 +4,7 @@
 class BinaryCalculator {
 private:
     std::vector<int> firstBinaryNumber, secondBinaryNumber, secondBinaryNumberAddCode, div, summ;
-    int inputFirstNumber, inputSecondNumber, pairNumber;;
+    int inputFirstNumber, inputSecondNumber, pairNumber, taktStart, taktMultiplier;
 
     // Константы для двоичных чисел
     int SIZE = 4;
@@ -12,12 +12,12 @@ private:
     // 0001
 public:
     // Конструктор
-    BinaryCalculator(int inputFirstNumber, int inputSecondNumber, int pairNumber);
+    BinaryCalculator(int inputFirstNumber, int inputSecondNumber, int pairNumber, int taktStart, int taktMultiplier);
     BinaryCalculator();
 
 public:
     // Реализация алгоритма деления
-    void compute();
+    std::vector<std::string> compute();
 
     // Сдвиг
     void shift();

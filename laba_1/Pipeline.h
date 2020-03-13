@@ -1,14 +1,16 @@
 #pragma once
-
+#include <vector>
 #include <string>
 
 class Pipeline {
+
 private:
-    std::string firstVector, secondVector;
+    std::vector<int> firstVector, secondVector;
     int processingTime;
 
 public:
-    Pipeline(int firstVector, int secondVector, int processingTime);
+    Pipeline(std::vector<int> firstVector, std::vector<int> secondVector, int processingTime);
+
     void run();
 
 };
