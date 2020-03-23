@@ -5,10 +5,13 @@ class BinaryCalculator {
 private:
     std::vector<int> firstBinaryNumber, secondBinaryNumber, secondBinaryNumberAddCode, div, summ;
     int inputFirstNumber, inputSecondNumber, pairNumber, taktStart, taktMultiplier;
+    int state = 0, k;
+    bool done = false;
 
     // Константы для двоичных чисел
     int SIZE = 4;
     std::vector<int> ONE = {1, 0, 0, 0};
+    std::vector<int> ZERO = {0, 0, 0, 0};
     // 0001
 public:
     // Конструктор
@@ -16,8 +19,7 @@ public:
     BinaryCalculator();
 
 public:
-    // Реализация алгоритма деления
-    std::vector<std::string> compute();
+    bool oneStep();
 
     // Сдвиг
     void shift();
@@ -43,4 +45,9 @@ public:
     // Сумма двоичных чисел
     std::vector<int> binaryAddition(std::vector<int> num_1, std::vector<int> num_2);
 
+    void step_1();
+    void step_2();
+    void step_3();
+    void step_4();
+    void step_5();
 };

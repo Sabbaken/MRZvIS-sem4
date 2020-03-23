@@ -96,12 +96,6 @@
 		<Unit filename="/home/kirill/Documents/ВУЗ/MRZvIS/laba_1/Pipeline.h">
 			<Option target="Laba1"/>
 		</Unit>
-		<Unit filename="/home/kirill/Documents/ВУЗ/MRZvIS/laba_1/Visualizer.cpp">
-			<Option target="Laba1"/>
-		</Unit>
-		<Unit filename="/home/kirill/Documents/ВУЗ/MRZvIS/laba_1/Visualizer.h">
-			<Option target="Laba1"/>
-		</Unit>
 		<Unit filename="/home/kirill/Documents/ВУЗ/MRZvIS/laba_1/main.cpp">
 			<Option target="Laba1"/>
 		</Unit>

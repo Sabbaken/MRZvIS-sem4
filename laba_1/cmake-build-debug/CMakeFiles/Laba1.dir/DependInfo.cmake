@@ -6,7 +6,6 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_CHECK_CXX
   "/home/kirill/Documents/ВУЗ/MRZvIS/laba_1/BinaryCalculator.cpp" "/home/kirill/Documents/ВУЗ/MRZvIS/laba_1/cmake-build-debug/CMakeFiles/Laba1.dir/BinaryCalculator.cpp.o"
   "/home/kirill/Documents/ВУЗ/MRZvIS/laba_1/Pipeline.cpp" "/home/kirill/Documents/ВУЗ/MRZvIS/laba_1/cmake-build-debug/CMakeFiles/Laba1.dir/Pipeline.cpp.o"
-  "/home/kirill/Documents/ВУЗ/MRZvIS/laba_1/Visualizer.cpp" "/home/kirill/Documents/ВУЗ/MRZvIS/laba_1/cmake-build-debug/CMakeFiles/Laba1.dir/Visualizer.cpp.o"
   "/home/kirill/Documents/ВУЗ/MRZvIS/laba_1/main.cpp" "/home/kirill/Documents/ВУЗ/MRZvIS/laba_1/cmake-build-debug/CMakeFiles/Laba1.dir/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")

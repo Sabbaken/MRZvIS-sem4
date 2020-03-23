@@ -1,7 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/Laba1.dir/BinaryCalculator.cpp.o"
   "CMakeFiles/Laba1.dir/Pipeline.cpp.o"
-  "CMakeFiles/Laba1.dir/Visualizer.cpp.o"
   "CMakeFiles/Laba1.dir/main.cpp.o"
   "Laba1"
   "Laba1.pdb"

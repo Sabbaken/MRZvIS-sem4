@@ -1,6 +1,5 @@
 #include "Pipeline.h"
 #include "BinaryCalculator.h"
-#include "Visualizer.h"
 #include <vector>
 
 Pipeline::Pipeline(std::vector<int> firstVector, std::vector<int> secondVector, int processingTime) {
@@ -10,11 +9,18 @@ Pipeline::Pipeline(std::vector<int> firstVector, std::vector<int> secondVector, 
 }
 
 void Pipeline::run() {
-    Visualizer visualizer;
+    std::vector<BinaryCalculator> vector_of_threads;
+
     for (int i = 0; i < firstVector.size(); ++i) {
-        BinaryCalculator calc(firstVector[i], secondVector[i], i, i, processingTime);
-        visualizer.addResultVector(calc.compute());
+        vector_of_threads.push_back(BinaryCalculator(firstVector[i], secondVector[i], i, i, processingTime));
     }
 
-    visualizer.showResult();
+    bool k = false;
+    do {
+        k = false;
+        for (auto & threads : vector_of_threads) {
+            if (threads.oneStep())
+                k = true;
+        }
+    } while (k);
 }

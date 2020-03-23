@@ -6,19 +6,17 @@
 
 #IncludeRegexTransform: 
 
-/home/kirill/Documents/ВУЗ/MRZvIS/laba_1/Visualizer.cpp
+/home/kirill/Documents/ВУЗ/MRZvIS/laba_1/BinaryCalculator.cpp
+BinaryCalculator.h
+/home/kirill/Documents/ВУЗ/MRZvIS/laba_1/BinaryCalculator.h
 vector
-/home/kirill/Documents/ВУЗ/MRZvIS/laba_1/vector
-string
-/home/kirill/Documents/ВУЗ/MRZvIS/laba_1/string
+-
 iostream
 -
-Visualizer.h
-/home/kirill/Documents/ВУЗ/MRZvIS/laba_1/Visualizer.h
 
-/home/kirill/Documents/ВУЗ/MRZvIS/laba_1/Visualizer.h
-vector
-/home/kirill/Documents/ВУЗ/MRZvIS/laba_1/vector
+/home/kirill/Documents/ВУЗ/MRZvIS/laba_1/BinaryCalculator.h
 string
-/home/kirill/Documents/ВУЗ/MRZvIS/laba_1/string
+-
+vector
+-
 

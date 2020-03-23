@@ -9,7 +9,6 @@ set(SOURCE_FILES main.cpp
         BinaryCalculator.h
         Pipeline.cpp
         Pipeline.h
-        Visualizer.cpp
-        Visualizer.h)
+        )
 
 add_executable(Laba1 ${SOURCE_FILES})
