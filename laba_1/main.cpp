@@ -15,7 +15,7 @@ int main(int argc, char *argv[]) {
     cout << "vector 1" << endl;
     while (true) {
         cin >> input;
-        if (input == "n")
+        if (input == "n" || input.empty())
             break;
 
         int var = atoi(input.c_str());

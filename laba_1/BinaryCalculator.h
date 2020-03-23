@@ -5,7 +5,7 @@ class BinaryCalculator {
 private:
     std::vector<int> firstBinaryNumber, secondBinaryNumber, secondBinaryNumberAddCode, div, summ;
     int inputFirstNumber, inputSecondNumber, pairNumber, taktStart, taktMultiplier;
-    int state = 0, k;
+    int state = 0, k, n;
     bool done = false;
 
     // Константы для двоичных чисел
@@ -23,6 +23,9 @@ public:
 
     // Сдвиг
     void shift();
+    std::vector<int> shiftLeft(std::vector<int> binaryNumber);
+    std::vector<int> shiftRight(std::vector<int> binaryNumber);
+    void shiftRemainder();
 
     // Обновление частного
     void fixResult();
@@ -32,6 +35,9 @@ public:
 
     // Восстановление остатка
     void restoreRemainder();
+
+    //Нормализация
+    void normalized();
 
     // Получить из числа в двоичном коде число в дополнительном коде
     std::vector<int> _2_to_additional_code(std::vector<int> binaryNumber);
