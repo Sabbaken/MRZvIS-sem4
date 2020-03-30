@@ -58,7 +58,10 @@ std::vector<int> BinaryCalculator::binaryAddition(std::vector<int> num_1, std::v
 
     if (num_1[SIZE - 1] == 1 && num_2[SIZE - 1] == 1)
         sum = _2_to_additional_code(sum);
-
+//    std::cout<<"\n"<<stringify(num_1)<<"\n"
+//                <<stringify(num_2)<<"\n"
+//                <<"-----\n"
+//                <<stringify(sum)<<"\n";
     return sum;
 }
 
@@ -80,11 +83,11 @@ void BinaryCalculator::shift() {
 }
 
 void BinaryCalculator::getSumm() {
-    if (this->summ[SIZE - 1] == 0) {
+    //if (this->summ[SIZE - 1] == 0) {
         this->summ = binaryAddition(this->summ, this->secondBinaryNumberAddCode);
-    } else {
-        this->summ = binaryAddition(this->summ, this->secondBinaryNumber);
-    }
+//    } else {
+//        this->summ = binaryAddition(this->summ, this->secondBinaryNumber);
+//    }
 }
 
 void BinaryCalculator::fixResult() {
