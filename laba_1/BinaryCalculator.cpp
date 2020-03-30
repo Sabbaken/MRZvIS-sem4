@@ -106,7 +106,12 @@ void BinaryCalculator::restoreRemainder() {
 }
 
 
-bool BinaryCalculator::oneStep() {
+bool BinaryCalculator::oneStep(int k) {
+    this->k = k;
+
+    if (this->done) {
+        return false;
+    }
     /*
      Формат вывода:
      Step 1
@@ -160,15 +165,16 @@ bool BinaryCalculator::oneStep() {
     }
 
     if (state >= 4 * (this->n+1)) {
+        this->done = true;
         if(n<0){
-            std::cout << "Пара " + std::to_string(pairNumber)
+            std::cout << "Пара " + std::to_string(pairNumber) + " Результат"
                          + "\nTакт: " + std::to_string(k + 1)
                          + "\nРезультат: " + stringify(this->div)
                          + "\nОстаток: " + stringify(firstBinaryNumber);
 
         }else {
             this->shiftRemainder();
-            std::cout << "Пара " + std::to_string(pairNumber)
+            std::cout << "Пара " + std::to_string(pairNumber)  + " Результат"
                          + "\nTакт: " + std::to_string(k)
                          + "\nРезультат: " + stringify(this->div)
                          + "\nОстаток: " + stringify(this->summ) << std::endl;
@@ -189,8 +195,8 @@ void BinaryCalculator::step_1() {
     this->normalized();
     std::cout << "Пара " + std::to_string(pairNumber) + " Превращена в двоичное\n" +
                  "Tакт: " + std::to_string(k) + "\n" +
-                 "Число №1: " + stringify(firstBinaryNumber) + "\n" +
-                 "Число №2: " + stringify(secondBinaryNumber) + "\n";
+                 "Число №1: " + stringify(_10_to_2_(inputFirstNumber)) + "\n" +
+                 "Число №2: " + stringify(_10_to_2_(inputSecondNumber)) + "\n";
 }
 
 void BinaryCalculator::step_2() {

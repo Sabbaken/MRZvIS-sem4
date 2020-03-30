@@ -19,7 +19,7 @@ public:
     BinaryCalculator();
 
 public:
-    bool oneStep();
+    bool oneStep(int k);
 
     // Сдвиг
     void shift();
