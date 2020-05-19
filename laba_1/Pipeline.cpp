@@ -26,7 +26,7 @@ void Pipeline::run() {
         for (auto & threads : vector_of_threads) {
             if (threads.oneStep(counter_int)) {
                 k = true;
-                counter_int += processingTime;4
+                counter_int += processingTime;
             }
         }
     } while (k);

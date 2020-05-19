@@ -6,41 +6,17 @@
 
 #IncludeRegexTransform: 
 
-/home/kirill/Documents/ВУЗ/MRZvIS/laba_1/BinaryCalculator.cpp
+/home/viktor/2-course/MRZvIS/laba_1/BinaryCalculator.cpp
 BinaryCalculator.h
-/home/kirill/Documents/ВУЗ/MRZvIS/laba_1/BinaryCalculator.h
+/home/viktor/2-course/MRZvIS/laba_1/BinaryCalculator.h
 vector
 -
 iostream
 -
 
-/home/kirill/Documents/ВУЗ/MRZvIS/laba_1/BinaryCalculator.h
+/home/viktor/2-course/MRZvIS/laba_1/BinaryCalculator.h
 string
 -
 vector
 -
-
-/home/kirill/Documents/ВУЗ/MRZvIS/laba_1/Pipeline.cpp
-Pipeline.h
-/home/kirill/Documents/ВУЗ/MRZvIS/laba_1/Pipeline.h
-BinaryCalculator.h
-/home/kirill/Documents/ВУЗ/MRZvIS/laba_1/BinaryCalculator.h
-vector
--
-
-/home/kirill/Documents/ВУЗ/MRZvIS/laba_1/Pipeline.h
-vector
--
-string
--
-
-/home/kirill/Documents/ВУЗ/MRZvIS/laba_1/main.cpp
-iostream
--
-vector
--
-Pipeline.h
-/home/kirill/Documents/ВУЗ/MRZvIS/laba_1/Pipeline.h
-BinaryCalculator.h
-/home/kirill/Documents/ВУЗ/MRZvIS/laba_1/BinaryCalculator.h
 
